@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/Style.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="instagram-inner">
+                <!-- <div class="user-pic"> -->
+                <img class="load user-img" src="./public/Profile.png" alt="">
+                <!-- </div> -->
+
+                <div class="user-info">
+                    <div class="nikname">
+                        <h2 class="point" id="nikname"></h2>
+                        <button class="point">Edit profile</button>
+                        <button class="point">View archive</button>
+                        <i class="ri-settings-2-fill nikname-icon point"></i>
+                    </div>
+
+                    <div class="subs">
+                        <ul>
+                            <li><span id="posts"></span> posts</li>
+                            <li class="point"><span id="followers"></span> followers</li>
+                            <li class="point"><span id="following"></span> following</li>
+                        </ul>
+                    </div>
+
+                    <div class="user-name">
+                        <h3 id="name"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div id="highlights" class="highlights-inner">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-posts">
+            <div class="container">
+                <div class="filter-buttons">
+                    <div data-content="all" id="grid" class="grid icon-container"><i
+                            class="ri-layout-grid-2-line point"></i></div>
+                    <div data-content="video" class="video icon-container"><i class="ri-video-line point"></i></div>
+                    <div data-content="photos" class="person icon-container"><i class="ri-account-box-2-line point"></i>
+                    </div>
+                </div>
+                <div id="postsContainer" class="posts-inner">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+<script src="src/index.js"></script>
+<script type="module" src="/src/main.js"></script>
+
+</html>

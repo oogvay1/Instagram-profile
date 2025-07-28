@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 975px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.instagram-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    gap: 100px;
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+
+.user-img {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nikname {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nikname button {
+    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #363C44;
+}
+
+.nikname h2 {
+    font-weight: 400;
+}
+
+.nikname i {
+    font-size: 24px;
+}
+
+.subs ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.subs ul li {
+    color: #A8A8A8;
+}
+
+.subs ul li span {
+    color: #ffffff;
+}
+
+.user-name h3 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.highlights-inner {
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.highlight-img-container {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 3px solid #363636;
+}
+
+.highlight-container {
+    width: 115px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.highlight-container h2,
+.highlight-add-container h2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.highlight-img {
+    width: 97px;
+    height: 97px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #080E1A;
+}
+
+.highlight-add-img-container {
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 3px solid #363636;
+}
+
+.highlight-add-img-container i {
+    width: 97px;
+    height: 97px;
+    font-size: 45px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 7px;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-add-img-container i:hover {
+    background-color: #181818;
+}
+
+.highlight-add-container {
+    width: 115px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-posts {
+    margin-top: 70px;
+}
+
+.posts-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 2px 5px;
+    width: 910px;
+    margin-inline: auto;
+}
+
+.post-container img {
+    width: 420px;
+    margin: 0 auto;
+}
+
+.posts-inner .post-container:nth-child(2) .post_img2 {
+    width: 510px;
+}
+
+.posts-inner .post-container:nth-child(4) .post_img,
+.posts-inner .post-container:nth-child(5) .post_img {
+    width: 500px;
+}
+
+.posts-inner .post-container:nth-child(6) .post_img,
+.posts-inner .post-container:nth-child(7) .post_img {
+    width: 677px;
+}
+
+.posts-inner .post-container:nth-child(8) .post_img {
+    width: 520px;
+}
+
+.post-container {
+    width: 300px;
+    height: 410px;
+    overflow: hidden;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: all .15s ease-in-out;
+}
+
+.post-container:hover .post-img-likes {
+    z-index: 999;
+    opacity: 1;
+}
+
+.post-container:hover .post_video_views {
+    opacity: 0;
+}
+
+.post-img-likes {
+    width: 300px;
+    height: 410px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    z-index: -1;
+    opacity: 0;
+    background: #000000a8;
+}
+
+.post-img-likes p {
+    font-size: 30px;
+}
+
+.post-views {
+    width: 300px;
+    height: 410px;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    padding: 7px 0px 0px 260px;
+    align-items: start;
+    z-index: 99;
+}
+
+.post-views img {
+    width: 30px;
+}
+
+.post_video_views {
+    width: 300px;
+    height: 410px;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 40px;
+    transition: all .1s ease-in-out;
+}
+
+.post_video_views i {
+    position: absolute;
+    top: 91%;
+    left: 14px;
+}
+
+.filter-buttons {
+    width: 910px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+    margin-inline: auto;
+    border-bottom: 1.5px solid #2B3036;
+}
+
+.filter-buttons div {
+    position: relative;
+}
+
+.filter-buttons div::before {
+    content: '';
+    width: 65px;
+    height: 2px;
+    top: 120%;
+    position: absolute;
+}
+
+.filter-buttons div.active::before {
+    background-color: #fff;
+}
+
+.icon-container {
+    display: inline-block;
+    font-size: 35px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagged {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: auto;
+    gap: 10px;
+}
+
+.tagged i {
+    font-size: 70px;
+}
+
+.tagged h2 {
+    font-size: 30px;
+}
+
+.tagged p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 375px) {
+    .instagram-inner {
+        height: 200px;
+        text-align: start;
+        justify-content: start;
+        flex-wrap: nowrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nikname-icon {
+        display: none;
+    }
+
+    .user-img {
+        width: 130px;
+        height: 100px;
+    }
+
+    .nikname {
+        width: 210px;
+    }
+
+    .nikname h2 {
+        font-size: 17px;
+    }
+
+    .subs {
+        position: absolute;
+        height: 100vh;
+        display: flex;
+        justify-content: end;
+        text-align: center;
+        align-items: center;
+        margin-top: 50px;
+        left: 10px;
+        width: 350px;
+        border-top: 1.5px solid #363636;
+    }
+    
+    .subs ul {
+        width: 375px;
+        padding: 25px;
+        margin-left: -10px;
+        justify-content: space-around;
+    }
+    
+    .subs ul li {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .highlights-inner {
+        justify-content: start;
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+    .highlight-img-container,
+    .highlight-add-img-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .highlight-img,
+    .highlight-add-img-container i {
+        width: 85px;
+        height: 85px;
+    }
+
+    .filter-buttons {
+        width: 375px;
+        justify-content: center;
+    }
+    .filter-buttons div {
+        width: 90px;
+    }
+
+    .posts-inner {
+        width: 375px;
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-posts {
+        margin-top: 110px;
+    }
+}

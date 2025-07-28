@@ -1,0 +1,35 @@
+[
+    {
+        "names": {
+            "name": "Alibekov Azimbek",
+            "nikname": "master_oogvay1",
+            "profilePic": "../public/Profile.png"
+        },
+        "posts": {
+            "content": [
+                { "src": "../public/1Dollar.png", "comments": 0, "likes": 2, "isVideo": false },
+                { "src": "../public/machine.png", "comments": 0, "likes": 5, "isVideo": false },
+                { "src": "../public/Luma.png", "comments": 1, "likes": 7, "views": 30, "isVideo": true },
+                { "src": "../public/house.png", "comments": 1, "likes": 9, "views": 62, "isVideo": true },
+                { "src": "../public/house.png", "comments": 0, "likes": 8, "isVideo": false },
+                { "src": "../public/Yandex.png", "comments": 0, "likes": 6, "isVideo": false },
+                { "src": "../public/Yandex.png", "comments": 0, "likes": 7, "isVideo": false },
+                { "src": "../public/panasonic.png", "comments": 0, "likes": 8, "isVideo": false },
+                { "src": "../public/house2.png", "comments" : 0, "likes": 8, "isVideo": false }
+            ],
+            "postsNum": 8
+        },
+        "subscriptions": {
+            "subscribers": 26,
+            "subscribes": 25
+        },
+        "highlights": [
+            { "src": "../public/Pubg.png", "name": "PUBG" }
+        ],
+        "tagged": {
+            "icon": "<i class=\"ri-shield-user-line\"></i>",
+            "title": "Photos of you",
+            "text": "When people tag you in photos, they'll appear here."
+        }
+    }
+]
