@@ -19,6 +19,7 @@ async function GetData() {
             icon_container.forEach(btn => btn.classList.remove('active'));
             el.classList.add('active');
         }
+        grid.classList.add('active');
 
         icon_container.forEach(el => {
             el.classList.remove('active');

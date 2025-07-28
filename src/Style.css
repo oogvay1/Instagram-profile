@@ -347,6 +347,35 @@ body {
     font-size: 14px;
 }
 
+.footer-inner {
+    color: #808080;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-li-container {
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-li-container a {
+    color: #808080;
+}
+
+.lang-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
 @media screen and (max-width: 375px) {
     .instagram-inner {
         height: 200px;
